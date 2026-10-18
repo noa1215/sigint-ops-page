@@ -1,0 +1,197 @@
+/* html {
+    overflow: hidden;
+    height: 100%;
+    background: radial-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 1)),
+        linear-gradient(90deg, dimgrey 1px, transparent 1px),
+        linear-gradient(dimgrey 1px, grey 1px);
+    background-size: 100%, 2px 1px, 1px 2px;
+} */
+body{
+    background-color: #0E0E12;
+}
+.radar,
+.sweep {
+    /* position: absolute; */
+}
+
+.radar {
+    overflow: hidden;
+    /* top: 50%;
+    left: 50%;
+    margin: -117px; */
+    width: 248px;
+    height: 248px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+        inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+    background:
+        repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px),
+        linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+        linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+        linear-gradient(#333, #111);
+    background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+
+.sweep {
+    box-sizing: border-box;
+    top: 16px;
+    left: 16px;
+    border-right: solid 1px hsla(145, 50%, 40%, .3);
+    width: 108px;
+    height: 108px;
+    border-radius: 100% 0 0 0;
+    transform-origin: 100% 100%;
+    background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+    animation: sweep 5s infinite linear;
+}
+
+@keyframes sweep {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+#up-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #09090E;
+    border-bottom: 2px solidb #121619;
+
+}
+
+#shield-icon {
+    background-color: #0AD83E;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 2px;
+
+}
+
+#up-h1 {
+    color: #36BE50;
+    font-size: 30px;
+}
+
+#up-span {
+    border-radius: 35px;
+    height: auto;
+    color: #1E7730;
+    border: 2px solid #1E7730;
+    background-color: #063113;
+    padding: 7px 9px;
+    font-size: 20px;
+    margin-top: 7px;
+
+}
+
+#main-square {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: #16121E;
+    border: 5px solid #14181C;
+}
+
+
+.h1-section {
+    color: #175F29;
+    font-size: 30px;
+}
+
+.h3-section {
+    color: #4C4B59;
+}
+
+#buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.button {
+    border-radius: 15px;
+    border: 3px solid 4C4B59;
+    background-color: #16121E;
+    color: #4C4B59;
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "card4 card3 card2 card1";
+    gap: 10px;
+}
+.card1{
+ grid-area: card1;   
+}
+
+.card2{
+ grid-area: card2;   
+}
+.card3{
+ grid-area: card3;   
+}
+.card4{
+ grid-area: card4;   
+}
+.card {
+    border-radius: 15px;
+    border: 3px solid #1C1B25;
+    background-color: #16121E;
+    display: grid;
+    grid-template-areas: "span h3"
+    "lable"
+    "progress";
+
+}
+
+.card h3 {
+    color: #3B3A48;
+}
+
+#ThreatDetected-div {
+    border: 3px solid #791D2E;
+    background-color: #27121B;
+    color: #791D2E;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #09090E;
+    align-items: center;
+  
+
+}
+.footer-menu{
+    display: flex;
+      flex-direction: column;
+    list-style: none;
+    color: #4D4C56;
+    text-align: center;
+    padding: 10px;
+}
+.footer-menu:hover{
+    color: #28813F;
+}
+.material-symbols-outlined{
+    align-items: start;
+}

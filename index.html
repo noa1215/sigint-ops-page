@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shield,electric_bolt,code,flight,vital_signs,sensors,description,help" />
 </head>
+
 <body>
-    
+    <header>
+        <div id="up-container">
+            <span id="shield-icon" class="material-symbols-outlined">
+                shield
+            </span>
+            <div>
+                <h1 id="up-h1">SIGINT OPS</h1>
+            </div>
+            <span id="up-span">secure online</span>
+        </div>
+    </header>
+    <main>
+        <section id="main-square">
+            <div class='radar'>
+                <div class='sweep'></div>
+            </div>
+            <div id="text-section">
+                <h1 class="h1-section">24 </h1>
+                <h3 class="h3-section"> active signals</h3>
+                <h1 class="h1-section">07 </h1>
+                <h3 class="h3-section">priority alerts</h3>
+
+
+            </div>
+            <div></div>
+        </section>
+        <div id="buttons">
+            <button class="button">new brief <span class="material-symbols-outlined">
+                    electric_bolt
+                </span></button>
+            <button class="button">Decode <span class="material-symbols-outlined">
+                    code
+                </span></button>
+            <button class="button">Drone <span class="material-symbols-outlined">
+                    flight
+                </span></button>
+
+        </div>
+        <div id="cards">
+            <div class="card card1">
+                <h3 class="h3">Active</h3> <span  class="span high-span">HIGH</span>
+                <label class="lable" for="file">cyber defense grid:</label>
+                <progress class="progress" id="file" max="100" value="80">80%</progress>
+            </div>
+            <div class="card card2">
+                <h3 class="h3">Pending</h3> <span class="span medium-span"> MEDIUM</span>
+                <label class="lable" for="file">Asset Recovery:</label>
+                <progress class="progress" id="file" max="100" value="15">15%</progress>
+                 </div>
+                <div class="card card3">
+                    <h3 class="h3">Analyzing</h3> <span class="span high-span">HIGH</span>
+                        <label class="lable" for="file">signl intercept alpha:</label>
+                    <progress class="progress" id="file" max="100" value="40">40%</progress>
+                </div>
+                    <div class="card card4">
+                        <h3 class="h3">In progress</h3> <span class="span critical-span">CRITICAL</span>
+                        <label class="lable" for="file">Operation nightFall:</label>
+                        <progress class="progress" id="file" max="100" value="65">65%</progress>
+                    </div>
+                
+
+            </div>
+            <div id="ThreatDetected-div">
+                <h1>Threat Detected</h1>
+            </div>
+    </main>
+    <footer>
+        <nav id="footer-nav">
+            <ul id="menu">
+                <li class="footer-menu">dashboard <span class="material-symbols-outlined">
+                        vital_signs
+                    </span></li>
+                <li class="footer-menu">feed <span class="material-symbols-outlined">
+                        sensors
+                    </span></li>
+                <li class="footer-menu"> Brief <span class="material-symbols-outlined">
+                        description
+                    </span></li>
+                <li><span class="material-symbols-outlined footer-menu">
+                        help
+                    </span></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
