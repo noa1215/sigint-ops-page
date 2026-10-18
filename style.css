@@ -6,15 +6,17 @@
         linear-gradient(dimgrey 1px, grey 1px);
     background-size: 100%, 2px 1px, 1px 2px;
 } */
-body{
+body {
     background-color: #0E0E12;
 }
+
 .radar,
 .sweep {
     /* position: absolute; */
 }
 
 .radar {
+    border: 3px solid #0CAD3A;
     overflow: hidden;
     /* top: 50%;
     left: 50%;
@@ -25,7 +27,7 @@ body{
     box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
         inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
     background:
-        repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px),
+        /* repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px), */
         linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
         linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
         linear-gradient(#333, #111);
@@ -68,7 +70,7 @@ label {
 #shield-icon {
     background-color: #0AD83E;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 20px;
     padding: 2px;
 
 }
@@ -99,7 +101,29 @@ label {
     background-color: #16121E;
     border: 5px solid #14181C;
 }
-
+.circle{
+    color: #0CAD3A;
+    font-size: 8px;
+    position: relative;
+}
+.circle1{
+    top: -57px;
+    left:141px;
+}
+.circle2{
+    top: 67px;
+    left:174px;
+}
+.circle3{
+    top: 37px;
+    left:47px;
+}
+.circle-red{
+    color: #702037;
+    font-size: 15px;
+    bottom: 22px;
+    left:-920px ;
+}
 
 .h1-section {
     color: #175F29;
@@ -133,32 +157,90 @@ label {
     grid-template-areas: "card4 card3 card2 card1";
     gap: 10px;
 }
-.card1{
- grid-area: card1;   
+
+.card1 {
+    grid-area: card1;
+        border-left: 6px #7D5A10 solid ;
+
 }
 
-.card2{
- grid-area: card2;   
+.card2 {
+    grid-area: card2;
+    border-left:5px solid #0F9F36 ;
 }
-.card3{
- grid-area: card3;   
+
+.card3 {
+    grid-area: card3;
+    border-left: 6px solid #7D5A10;
+
 }
-.card4{
- grid-area: card4;   
+
+.card4 {
+    grid-area: card4;
+    border-left: 5px solid #791D2E;
 }
+
 .card {
     border-radius: 15px;
-    border: 3px solid #1C1B25;
     background-color: #16121E;
-    display: grid;
-    grid-template-areas: "span h3"
-    "lable"
-    "progress";
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    padding: 15px;
+}
 
+.inner-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.lable {
+    color: #b5bebe;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.progress {
+    background-color: #178D3E;
+    border-radius: 30px;
+    height: 7px;
 }
 
 .card h3 {
     color: #3B3A48;
+}
+
+.high-span {
+    background-color: #413316;
+    border: 3px solid #7D5A10;
+    color: #88631E;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.medium-span {
+    background-color: #07451F;
+    border: 3px solid #0F9F36;
+    color: #0F9F36;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.critical-span {
+    background-color: #27121B;
+    border: 3px solid #791D2E;
+    color: #791D2E;
+    padding: 8px;
+    border-radius: 8px;
+
 }
 
 #ThreatDetected-div {
@@ -171,27 +253,32 @@ label {
     justify-content: center;
     margin-top: 10px;
     font-size: 15px;
+    margin-bottom: 55px;
 }
 
-#menu{
+#menu {
     display: flex;
     justify-content: space-around;
     background-color: #09090E;
     align-items: center;
-  
-
+    
 }
-.footer-menu{
+
+
+.footer-menu {
     display: flex;
-      flex-direction: column;
+    flex-direction: column;
     list-style: none;
     color: #4D4C56;
     text-align: center;
     padding: 10px;
 }
-.footer-menu:hover{
+
+.footer-menu:hover {
     color: #28813F;
+    border-bottom:3px solid #28813F ;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     align-items: start;
 }

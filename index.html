@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shield,electric_bolt,code,flight,vital_signs,sensors,description,help" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 
 <body>
@@ -26,6 +28,10 @@
         <section id="main-square">
             <div class='radar'>
                 <div class='sweep'></div>
+                <i class="fa-solid fa-circle circle circle1"></i>
+                <i class="fa-solid fa-circle circle circle2"></i>
+                <i class="fa-solid fa-circle circle circle3"></i>
+
             </div>
             <div id="text-section">
                 <h1 class="h1-section">24 </h1>
@@ -51,31 +57,41 @@
         </div>
         <div id="cards">
             <div class="card card1">
-                <h3 class="h3">Active</h3> <span  class="span high-span">HIGH</span>
+                <div class="inner-div">
+                    <h3 class="h3">Active</h3> <span class="span high-span">HIGH</span>
+                </div>
                 <label class="lable" for="file">cyber defense grid:</label>
                 <progress class="progress" id="file" max="100" value="80">80%</progress>
             </div>
             <div class="card card2">
-                <h3 class="h3">Pending</h3> <span class="span medium-span"> MEDIUM</span>
+                <div class="inner-div">
+                    <h3 class="h3">Pending</h3> <span class="span medium-span"> MEDIUM</span>
+                </div>
                 <label class="lable" for="file">Asset Recovery:</label>
                 <progress class="progress" id="file" max="100" value="15">15%</progress>
-                 </div>
-                <div class="card card3">
+            </div>
+            <div class="card card3">
+                <div class="inner-div">
                     <h3 class="h3">Analyzing</h3> <span class="span high-span">HIGH</span>
-                        <label class="lable" for="file">signl intercept alpha:</label>
-                    <progress class="progress" id="file" max="100" value="40">40%</progress>
                 </div>
-                    <div class="card card4">
-                        <h3 class="h3">In progress</h3> <span class="span critical-span">CRITICAL</span>
-                        <label class="lable" for="file">Operation nightFall:</label>
-                        <progress class="progress" id="file" max="100" value="65">65%</progress>
-                    </div>
-                
+                <label class="lable" for="file">signl intercept alpha:</label>
+                <progress class="progress" id="file" max="100" value="40">40%</progress>
+            </div>
+            <div class="card card4">
+                <div class="inner-div">
+                    <h3 class="h3">In progress</h3> <span class="span critical-span">CRITICAL</span>
+                </div>
+                <label class="lable" for="file">Operation nightFall:</label>
+                <progress class="progress" id="file" max="100" value="65">65%</progress>
+            </div>
 
-            </div>
-            <div id="ThreatDetected-div">
-                <h1>Threat Detected</h1>
-            </div>
+
+        </div>
+        <div id="ThreatDetected-div">
+            <h1>Threat Detected</h1>
+            <i class="fa-solid fa-circle circle circle-red"></i>
+
+        </div>
     </main>
     <footer>
         <nav id="footer-nav">
